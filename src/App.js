@@ -5,7 +5,7 @@ import Counter from "./components/Counter";
 import Logo from "./components/Logo";
 import Sticker from "./components/Sticker";
 import MyInput from "./components/UI/input/MyInput";
-
+import './components/styles/App.css';
 
 
 function App() {
@@ -15,8 +15,17 @@ function App() {
 
   return (
     <div className="App">
-        <h1>Sticker App</h1>
-        <Sticker/>
+        <div className="post">
+            <div className="post__counter">
+                <strong>1. New stick</strong>
+                <div>
+                    New stick description
+                </div>
+            </div>
+            <div className="post__btns">
+                <button>Delete</button>
+            </div>
+        </div>
 
     </div>
   );
