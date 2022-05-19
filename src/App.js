@@ -19,20 +19,34 @@ function App() {
         {id: 3, title: 'My Title', body: 'Description' },
         {id: 4, title: 'My Title', body: 'Description' }
     ])
-
+    const [body, setBody] = useState('')
+    const [title, setTitle] = useState('')
+    const addNewPost = (e) => {
+        e.preventDefault()
+        const newPost = {
+            id: Date.now(),
+            title,
+            body
+        }
+        //this is a very important construction. we take an older array post like "posts"
+        // and add a new post in the end with "newPost" object
+        setPosts([...posts, newPost])
+    }
 
   return (
     <div className="App">
         <form>
-            <input
+            <MyInput
+                value={title}
+                onChange = {e => setTitle(e.target.value)}
                 type='text'
-                placeholder="Name"
-            />
-            <input
+                placeholder="Name"/>
+            <MyInput
+                value={body}
+                onChange = {e => setBody(e.target.value)}
                 type='text'
-                placeholder="Description"
-            />
-           <MyButton>Create</MyButton>
+                placeholder="Description"/>
+           <MyButton onClick={addNewPost}>Create</MyButton>
         </form>
         <PostList posts={posts} title='Posts List 1'/>
 

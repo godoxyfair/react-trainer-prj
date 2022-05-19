@@ -4,7 +4,7 @@ import classes from "./MyButtton.module.css";
 const MyButton = ({children,...props}) => {
     return (
         //special props children when I take a button value from App.js
-        <button disabled={true} className={classes.myBtn}>
+        <button {...props} className={classes.myBtn}>
             {children}
         </button>
     );
