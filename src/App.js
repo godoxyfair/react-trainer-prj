@@ -6,6 +6,7 @@ import Logo from "./components/Logo";
 import Sticker from "./components/Sticker";
 import MyInput from "./components/UI/input/MyInput";
 import './components/styles/App.css';
+import PostItem from "./components/PostItem";
 
 
 function App() {
@@ -15,18 +16,7 @@ function App() {
 
   return (
     <div className="App">
-        <div className="post">
-            <div className="post__counter">
-                <strong>1. New stick</strong>
-                <div>
-                    New stick description
-                </div>
-            </div>
-            <div className="post__btns">
-                <button>Delete</button>
-            </div>
-        </div>
-
+        <PostItem post={{id: 1, title: 'My Title', body: 'Description' }}/>
     </div>
   );
 }
