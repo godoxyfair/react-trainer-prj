@@ -1,11 +1,12 @@
 import React from 'react';
 import classes from "./MyButtton.module.css";
 
-const MyButton = () => {
+const MyButton = ({children,...props}) => {
     return (
-        <div className={classes.myBtn}>
-            <button>OK</button>
-        </div>
+        //special props children when I take a button value from App.js
+        <button disabled={true} className={classes.myBtn}>
+            {children}
+        </button>
     );
 };
 

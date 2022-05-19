@@ -7,16 +7,35 @@ import Sticker from "./components/Sticker";
 import MyInput from "./components/UI/input/MyInput";
 import './components/styles/App.css';
 import PostItem from "./components/PostItem";
+import PostList from "./components/PostList";
+import MyButton from "./components/UI/button/MyButton";
 
 
 function App() {
 
-  const [value, setValue] = useState('MAY');
+    const [posts, setPosts] = useState([
+        {id: 1, title: 'My Title', body: 'Description' },
+        {id: 2, title: 'My Title', body: 'Description' },
+        {id: 3, title: 'My Title', body: 'Description' },
+        {id: 4, title: 'My Title', body: 'Description' }
+    ])
 
 
   return (
     <div className="App">
-        <PostItem post={{id: 1, title: 'My Title', body: 'Description' }}/>
+        <form>
+            <input
+                type='text'
+                placeholder="Name"
+            />
+            <input
+                type='text'
+                placeholder="Description"
+            />
+           <MyButton>Create</MyButton>
+        </form>
+        <PostList posts={posts} title='Posts List 1'/>
+
     </div>
   );
 }
