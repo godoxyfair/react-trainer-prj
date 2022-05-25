@@ -10,6 +10,7 @@ import PostItem from "./components/PostItem";
 import PostList from "./components/PostList";
 import MyButton from "./components/UI/button/MyButton";
 
+'use strict'
 
 function App() {
 
