@@ -20,7 +20,7 @@
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+
 }
 
 
@@ -41,4 +41,20 @@
 .post-exit-active {
     transform: translateX(-350px);
     transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+    margin-top: 10px;
+    display: flex;
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.page__current {
+    border: 2px solid orange;
+    font-weight: bold;
 }
