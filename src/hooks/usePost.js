@@ -10,7 +10,7 @@ export const useSortedPosts = (posts, sort) => {
 
     return sortedPosts;
 }
-
+//hook для поиска поста в массиве
 export const usePosts = (posts, sort, query) => {
     const sortedPosts = useSortedPosts(posts, sort);
 
