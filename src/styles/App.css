@@ -6,8 +6,10 @@
 
 #root {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;/* НЕ ЛОМАЕТ АДАПТАЦИЮ*/
+    /*flex-direction: column;  ломает адаптацию*/
 }
 
 .App {
@@ -24,6 +26,9 @@
 
 }
 
+.post__btns {
+    display: flex;
+}
 
 .remove-btn {
     margin-right: 0.5rem;
@@ -71,4 +76,13 @@
 
 .navbar__links {
     margin-left: auto;
+
+}
+
+.link {
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14pt;
+    color: teal;
 }

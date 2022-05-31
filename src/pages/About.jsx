@@ -2,9 +2,10 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div>
-            This app was created
+        <div style={{ width: '800px',display: 'flex' ,justifyContent: 'center'}}>
+            <h1>About</h1>
         </div>
+
     );
 };
 
