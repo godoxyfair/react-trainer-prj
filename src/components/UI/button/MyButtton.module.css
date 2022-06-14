@@ -6,3 +6,11 @@
     border: 1px solid teal;
     cursor: pointer;
 }
+
+.myBtn:hover {
+    color: white;
+    background-color: teal;
+    transform: scale(1.05);
+    transition: 0.2s;
+    box-shadow: 0 0 10px teal;
+}

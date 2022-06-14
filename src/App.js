@@ -1,16 +1,16 @@
 import './styles/App.css';
-import {BrowserRouter as Router} from "react-router-dom";
+import {BrowserRouter as Router, HashRouter} from "react-router-dom";
 import React from "react";
 import Navbar from "./components/UI/Navbar/Navbar";
 import AppRouter from "./components/AppRouter";
 
 function App() {
-
+    //Router use with normal server but GitHub use HashRouter for good router-dom work
     return (
-                <Router>
+                <HashRouter>
                     <Navbar/>
                     <AppRouter/>
-                </Router>
+                </HashRouter>
     );
 }
 

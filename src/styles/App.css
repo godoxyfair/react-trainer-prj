@@ -6,24 +6,32 @@
 
 #root {
     display: flex;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;/* НЕ ЛОМАЕТ АДАПТАЦИЮ*/
     /*flex-direction: column;  ломает адаптацию*/
+    background: black;
 }
 
 .App {
     width: 800px;
+    background: black;
 }
 
 .post {
     display: flex;
     padding: 15px;
     border: 2px solid teal;
+    border-radius: 10px;
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
+    color: white;
 
+}
+.post:hover {
+    box-shadow: 0 0 15px rgb(153, 170, 181);
 }
 
 .post__btns {
@@ -52,12 +60,17 @@
 .page__wrapper {
     margin-top: 10px;
     display: flex;
+    color: white;
 }
 
 .page {
     padding: 10px;
     border: 1px solid teal;
+    border-radius: 5px;
     cursor: pointer;
+}
+.page:hover {
+    box-shadow: 0 0 15px rgb(153, 170, 181);
 }
 
 .page__current {
@@ -71,18 +84,25 @@
     display: flex;
     align-items: center;
     padding: 0 15px;
-    background: lightgray;
+    background: teal;
+    border-radius: 10px;
 }
 
 .navbar__links {
     margin-left: auto;
-
 }
+
 
 .link {
     padding: 10px;
     text-decoration: none;
     cursor: pointer;
     font-size: 14pt;
-    color: teal;
+    color: black;
+}
+.link:hover {
+    color: white;
+    transform: scale(1.05);
+    transition: 0.5s;
+    font-size: 15pt;
 }

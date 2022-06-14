@@ -25,22 +25,22 @@ const PostIdPage = () => {
     }, [])
 
     return (
-        <div style={{display: 'flex', width: '800px', flexWrap: 'wrap', justifyContent: 'center'}}>
-            <h1 style={{marginTop: '20px'}}>Open page with ID = {params.id}</h1>
+        <div style={{display: 'flex', width: '800px', flexWrap: 'wrap', alignItems: 'center', flexDirection: 'column'}}>
+            <h1 style={{marginTop: '20px', color: 'white'}}>Post ID = {params.id}</h1>
             {isLoading
                 ?  <Loader/>
-                : <div style={{marginTop: '20px', fontSize: '18pt', alignItems: 'center'}}>{post.id}. {post.title}</div>
+                : <div style={{marginTop: '20px', fontSize: '16pt', color: 'white'}}>Name: {post.id}. {post.title}</div>
             }
 
-            <h1 style={{marginTop: '20px'}}>
+            <h1 style={{marginTop: '20px', marginBottom: '20px', color: 'white'}}>
                 Comments
             </h1>
 
             {isComLoading
                 ? <Loader/>
-                : <div style={{display: 'flex' ,justifyContent: 'center', flexDirection: 'column', border: '2px solid teal'}}>
+                : <div style={{display: 'flex' , flexDirection: 'column', border: '2px solid teal', borderRadius: '10px', padding: '10px', color: 'white', height: '100vh'}}>
                     {comment.map(comm =>
-                        <div style={{flexDirection: 'column'}} key={comm.email} style={{marginTop: '15px'}}>
+                        <div style={{}} key={comm.email} style={{marginTop: '15px'}}>
                             <h5>{comm.email}</h5>
                             <div>{comm.body}</div>
                         </div>

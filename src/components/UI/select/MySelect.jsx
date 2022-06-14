@@ -2,7 +2,7 @@ import React from 'react';
 //select - выпадающий список-->
 const MySelect = ({options, defaultValue, value, onChange }) => {
     return (
-        <select
+        <select style={{backgroundColor: 'black', color: 'white', marginTop: '10px' }}
             value={value}
             onChange={event =>onChange(event.target.value)}
         >

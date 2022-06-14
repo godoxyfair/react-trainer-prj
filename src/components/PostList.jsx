@@ -6,7 +6,7 @@ const PostList = ({posts, title, remove}) => {
 
     if (!posts.length) {
         return (
-            <h1 style={{textAlign: 'center'}}>
+            <h1 style={{textAlign: 'center', color: 'white'}}>
                 Stickers not found
             </h1>
         )
@@ -14,7 +14,7 @@ const PostList = ({posts, title, remove}) => {
     //TransitionGroup анимация смотреть в доках по реакту стили в App.css
     return (
         <div>
-            <h1 style={{textAlign: 'center'}}>
+            <h1 style={{textAlign: 'center', color: 'white'}}>
                 {title}
             </h1>
             <TransitionGroup>
