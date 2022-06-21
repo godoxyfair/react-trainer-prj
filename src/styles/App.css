@@ -69,7 +69,7 @@
 .page {
     padding: 10px;
     border: 1px solid teal;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
 }
 .page:hover {
