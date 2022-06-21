@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "bf793ada76eedb2f6d43",
-    "url": "/react-trainer-prj/static/css/main.d42d4a0f.chunk.css"
+    "revision": "ea2c64a0a9c5b5e6104e",
+    "url": "/react-trainer-prj/static/css/main.2a3eaceb.chunk.css"
   },
   {
-    "revision": "bf793ada76eedb2f6d43",
-    "url": "/react-trainer-prj/static/js/main.bf793ada.chunk.js"
+    "revision": "ea2c64a0a9c5b5e6104e",
+    "url": "/react-trainer-prj/static/js/main.ea2c64a0.chunk.js"
   },
   {
     "revision": "69bd58ce3fcdfc3d262e",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/react-trainer-prj/static/js/runtime~main.be9ced0c.js"
   },
   {
-    "revision": "35a2909b0bc14db69b20c3e9c3b13a46",
+    "revision": "0d4b794ca86fe5a7d1ef932363c555c3",
     "url": "/react-trainer-prj/index.html"
   }
 ];
