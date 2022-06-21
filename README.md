@@ -4,7 +4,7 @@
 I used react-router-dom, hooks, react transition group, css animation, flexbox, fetching...
 
 # This project in progres
-I worked with JSON Placeholder API https://jsonplaceholder.typicode.com/
+I worked with <a href="https://jsonplaceholder.typicode.com/" rel="noreferrer">JSON Placeholder API</a> 
 
 #Demo: https://godoxyfair.github.io/react-trainer-prj/
 
