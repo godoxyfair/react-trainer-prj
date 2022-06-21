@@ -1,18 +1,13 @@
 
-## This is my first experience with the React framework. This priject in progres
+## This is my first experience with the React framework
 
-## I used react-router-dom, hooks, react transition group, css animation, flexbox, fetching...
+I used react-router-dom, hooks, react transition group, css animation, flexbox, fetching...
 
+# This project in progres
 I worked with JSON Placeholder API
 
 #Demo: https://godoxyfair.github.io/react-trainer-prj/
 
-## Портфолио проект
-## Фреймворк React JS
-
-Так же использованы react-router-dom, hooks
-
-В процессе работы над проектом, были изучены основные принципы работы с фрейворком
 
 <img src="src/componets/images/preview.png" alt="preview"/>
 
