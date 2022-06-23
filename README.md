@@ -1,5 +1,5 @@
 
-## This is my first experience with the React framework
+## This is my first experience with the React framework (SPA application)
 
 I used react-router-dom, hooks, react transition group, css animation, flexbox, fetching...
 
